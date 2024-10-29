@@ -1,5 +1,5 @@
 title: Juan Zhu's Blog
-description: A blog about my experiences and projects.
+description: A blog about my experiences and interests.
 url: https://eileenzhujuan.github.io/juanzhu/
 baseurl: ""
 markdown: kramdown
@@ -13,7 +13,7 @@ navigation:
   - title: Contact
     url: /contact/
 
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: pages-themes/tactile@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 # - jekyll-feed
