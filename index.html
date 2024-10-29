@@ -7,7 +7,7 @@ title: Juan Zhu's Blog
   <div class="sidebar">
     <h2>About</h2>
     <p>
-      <a href="/about">Learn more about me and this blog!</a>
+      <a href="{{ site.baseurl }}/about">Learn more about me and this blog!</a>
     </p>
   </div>
 
@@ -16,7 +16,7 @@ title: Juan Zhu's Blog
     <ul>
       {% for post in site.posts %}
         <li>
-          <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+          <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
         </li>
       {% endfor %}
     </ul>
