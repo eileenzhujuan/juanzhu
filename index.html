@@ -4,6 +4,7 @@ title: Juan Zhu's Blog
 ---
 
 <div class="container">
+  <ul>
   <div class="sidebar">
     <h2>About</h2>
     <p>
@@ -11,10 +12,17 @@ title: Juan Zhu's Blog
     </p>
   </div>
 
+  <div class="sidebar">
+    <h2>All Posts</h2>
+    <p>
+      <a href="{{ site.baseurl }}/allposts">All Posts</a>
+    </p>
+  </div>
+  </ul>
   <div class="main-content">
     <h1>Recent Posts</h1>
     <ul>
-      {% for post in site.posts %}
+      {% for post in site.posts | limit: 6 %}
         <li>
           <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
         </li>
